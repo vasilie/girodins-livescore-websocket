@@ -1,0 +1,31 @@
+Arguments: 
+  /Users/diwanee/.nvm/versions/node/v10.15.3/bin/node /usr/local/bin/yarn add websocket
+
+PATH: 
+  /Users/diwanee/.nvm/versions/node/v10.15.3/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Users/diwanee/Library/Android/sdk/emulator:/Users/diwanee/Library/Android/sdk/tools:/Users/diwanee/Library/Android/sdk/tools/bin:/Users/diwanee/Library/Android/sdk/platform-tools
+
+Yarn version: 
+  1.5.1
+
+Node version: 
+  10.15.3
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  SyntaxError: /Applications/AMPPS/www/girodins-websocket-server/package.json: Unexpected end of JSON input
+      at JSON.parse (<anonymous>)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:1036:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/lib/node_modules/yarn/lib/cli.js:98:30)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:109:13
