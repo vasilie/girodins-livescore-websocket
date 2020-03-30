@@ -85,7 +85,7 @@ function isHome(){
     return isHome;
 }
 function hasScored(){
-    const hasScored = Math.random() > 0.98 ? true : false;
+    const hasScored = Math.random() > 0.96 ? true : false;
     // console.log("GOAL!!!");
     return hasScored;
 }
