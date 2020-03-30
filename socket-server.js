@@ -127,7 +127,7 @@ wsServer.on('request', function(request) {
       console.log((new Date()) + ' Connection from origin ' + request.origin + ' rejected.');
       return;
     }
-    connection = request.accept('echo-protocol', request.origin);
+    connection = request.accept('', request.origin);
     // console.log((new Date()) + ' Connection accepted.');
     var interval = setInterval(function(){
         connection.send(JSON.stringify(livescore));
