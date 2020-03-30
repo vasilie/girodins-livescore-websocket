@@ -39,7 +39,7 @@ const livescore = {
                 score: 0
             },
             away: {
-                id: 2,
+                id: 2,  
                 img: 'https://cdn.zeplin.io/5e7c64631e4a7f91bac57e43/assets/B2D94B69-7F1C-4A67-A7BE-7E2BD6C1F6E8.png',
                 name: "Arsenal",
                 score: 0
@@ -127,7 +127,7 @@ wsServer.on('request', function(request) {
       console.log((new Date()) + ' Connection from origin ' + request.origin + ' rejected.');
       return;
     }
-    connection = request.accept('girodins-livescore', request.origin);
+    connection = request.accept('echo-protocol', request.origin);
     // console.log((new Date()) + ' Connection accepted.');
     var interval = setInterval(function(){
         connection.send(JSON.stringify(livescore));
