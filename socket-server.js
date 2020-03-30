@@ -117,17 +117,17 @@ function changeScore(){
 var interval = setInterval(function(){
     changeScore();
 }, 10000);
-var connection;
+
 
 wsServer.on('request', function(request) {
-    console.log("new request");
+    console.log("new request", request.origin);
     if (!originIsAllowed(request.origin)) {
       // Make sure we only accept requests from an allowed origin
       request.reject();
       console.log((new Date()) + ' Connection from origin ' + request.origin + ' rejected.');
       return;
     }
-    connection = request.accept('', request.origin);
+    var connection = request.accept('', request.origin);
     // console.log((new Date()) + ' Connection accepted.');
     var interval = setInterval(function(){
         connection.send(JSON.stringify(livescore));
